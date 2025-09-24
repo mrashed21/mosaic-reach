@@ -1,20 +1,20 @@
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import {
+  ArrowRight,
+  BookOpen,
+  Calendar,
+  Clock,
+  Mail,
+  Search,
+  Tag,
+  TrendingUp,
+  User
+} from 'lucide-react';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { 
-  Calendar, 
-  User, 
-  Clock, 
-  Tag, 
-  Search,
-  BookOpen,
-  TrendingUp,
-  Mail,
-  ArrowRight
-} from 'lucide-react';
 
 export const Blog: React.FC = () => {
   const { t } = useTranslation();

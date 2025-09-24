@@ -1,6 +1,6 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
+import i18n from "i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+import { initReactI18next } from "react-i18next";
 
 // Translation resources
 const resources = {
@@ -12,30 +12,32 @@ const resources = {
       services: "Services",
       blog: "Blog",
       contact: "Contact",
-      
+
       // Common
       learnMore: "Learn More",
       getStarted: "Get Started",
       contactUs: "Contact Us",
       readMore: "Read More",
-      
+
       // Home Page
       heroTitle: "Professional Solutions for Global Success",
-      heroSubtitle: "We deliver innovative solutions that drive growth and transform businesses worldwide",
+      heroSubtitle:
+        "We deliver innovative solutions that drive growth and transform businesses worldwide",
       aboutTitle: "About Our Company",
-      aboutDescription: "With over a decade of experience, we provide world-class services to clients globally",
+      aboutDescription:
+        "With over a decade of experience, we provide world-class services to clients globally",
       featuresTitle: "Our Features",
       servicesTitle: "Our Services",
       testimonialsTitle: "What Our Clients Say",
       blogTitle: "Latest News & Insights",
-      
+
       // Footer
       company: "Company",
       quickLinks: "Quick Links",
       support: "Support",
       followUs: "Follow Us",
       allRightsReserved: "All rights reserved",
-      
+
       // About Page
       companyStory: "Our Story",
       mission: "Our Mission",
@@ -44,7 +46,7 @@ const resources = {
       culture: "Our Culture",
       achievements: "Our Achievements",
       careers: "Careers",
-      
+
       // Services Page
       serviceCategories: "Service Categories",
       serviceDetails: "Service Details",
@@ -52,7 +54,7 @@ const resources = {
       pricing: "Pricing Plans",
       caseStudies: "Case Studies",
       faqs: "Frequently Asked Questions",
-      
+
       // Blog Page
       blogList: "Blog Posts",
       categories: "Categories",
@@ -61,7 +63,7 @@ const resources = {
       newsletter: "Newsletter Subscription",
       tags: "Tags",
       authorHighlight: "Author Spotlight",
-      
+
       // Contact Page
       contactForm: "Contact Form",
       location: "Our Location",
@@ -69,8 +71,8 @@ const resources = {
       socialMedia: "Social Media",
       officeHours: "Office Hours",
       supportInfo: "Support Information",
-      feedback: "Feedback"
-    }
+      feedback: "Feedback",
+    },
   },
   bn: {
     translation: {
@@ -80,30 +82,32 @@ const resources = {
       services: "সেবাসমূহ",
       blog: "ব্লগ",
       contact: "যোগাযোগ",
-      
+
       // Common
       learnMore: "আরও জানুন",
       getStarted: "শুরু করুন",
       contactUs: "যোগাযোগ করুন",
       readMore: "আরও পড়ুন",
-      
+
       // Home Page
       heroTitle: "বিশ্বব্যাপী সাফল্যের জন্য পেশাদার সমাধান",
-      heroSubtitle: "আমরা উদ্ভাবনী সমাধান প্রদান করি যা বৃদ্ধি চালিত করে এবং বিশ্বব্যাপী ব্যবসা রূপান্তরিত করে",
+      heroSubtitle:
+        "আমরা উদ্ভাবনী সমাধান প্রদান করি যা বৃদ্ধি চালিত করে এবং বিশ্বব্যাপী ব্যবসা রূপান্তরিত করে",
       aboutTitle: "আমাদের কোম্পানি সম্পর্কে",
-      aboutDescription: "এক দশকেরও বেশি অভিজ্ঞতার সাথে, আমরা বিশ্বব্যাপী ক্লায়েন্টদের বিশ্বমানের সেবা প্রদান করি",
+      aboutDescription:
+        "এক দশকেরও বেশি অভিজ্ঞতার সাথে, আমরা বিশ্বব্যাপী ক্লায়েন্টদের বিশ্বমানের সেবা প্রদান করি",
       featuresTitle: "আমাদের বৈশিষ্ট্য",
       servicesTitle: "আমাদের সেবাসমূহ",
       testimonialsTitle: "আমাদের ক্লায়েন্টরা কী বলেন",
       blogTitle: "সর্বশেষ সংবাদ ও অন্তর্দৃষ্টি",
-      
+
       // Footer
       company: "কোম্পানি",
       quickLinks: "দ্রুত লিংক",
       support: "সহায়তা",
       followUs: "আমাদের অনুসরণ করুন",
       allRightsReserved: "সর্বস্বত্ব সংরক্ষিত",
-      
+
       // About Page
       companyStory: "আমাদের গল্প",
       mission: "আমাদের লক্ষ্য",
@@ -112,7 +116,7 @@ const resources = {
       culture: "আমাদের সংস্কৃতি",
       achievements: "আমাদের অর্জন",
       careers: "ক্যারিয়ার",
-      
+
       // Services Page
       serviceCategories: "সেবার বিভাগ",
       serviceDetails: "সেবার বিবরণ",
@@ -120,7 +124,7 @@ const resources = {
       pricing: "মূল্য পরিকল্পনা",
       caseStudies: "কেস স্টাডি",
       faqs: "প্রায়শই জিজ্ঞাসিত প্রশ্ন",
-      
+
       // Blog Page
       blogList: "ব্লগ পোস্ট",
       categories: "বিভাগ",
@@ -129,7 +133,7 @@ const resources = {
       newsletter: "নিউজলেটার সাবস্ক্রিপশন",
       tags: "ট্যাগ",
       authorHighlight: "লেখক স্পটলাইট",
-      
+
       // Contact Page
       contactForm: "যোগাযোগ ফর্ম",
       location: "আমাদের অবস্থান",
@@ -137,8 +141,8 @@ const resources = {
       socialMedia: "সোশ্যাল মিডিয়া",
       officeHours: "অফিস সময়",
       supportInfo: "সহায়তার তথ্য",
-      feedback: "মতামত"
-    }
+      feedback: "মতামত",
+    },
   },
   ar: {
     translation: {
@@ -148,30 +152,32 @@ const resources = {
       services: "الخدمات",
       blog: "المدونة",
       contact: "اتصل بنا",
-      
+
       // Common
       learnMore: "اعرف المزيد",
       getStarted: "ابدأ الآن",
       contactUs: "تواصل معنا",
       readMore: "اقرأ المزيد",
-      
+
       // Home Page
       heroTitle: "حلول مهنية للنجاح العالمي",
-      heroSubtitle: "نقدم حلولاً مبتكرة تدفع النمو وتحول الأعمال في جميع أنحاء العالم",
+      heroSubtitle:
+        "نقدم حلولاً مبتكرة تدفع النمو وتحول الأعمال في جميع أنحاء العالم",
       aboutTitle: "عن شركتنا",
-      aboutDescription: "مع أكثر من عقد من الخبرة، نقدم خدمات عالمية المستوى للعملاء في جميع أنحاء العالم",
+      aboutDescription:
+        "مع أكثر من عقد من الخبرة، نقدم خدمات عالمية المستوى للعملاء في جميع أنحاء العالم",
       featuresTitle: "ميزاتنا",
       servicesTitle: "خدماتنا",
       testimonialsTitle: "ماذا يقول عملاؤنا",
       blogTitle: "آخر الأخبار والرؤى",
-      
+
       // Footer
       company: "الشركة",
       quickLinks: "روابط سريعة",
       support: "الدعم",
       followUs: "تابعنا",
       allRightsReserved: "جميع الحقوق محفوظة",
-      
+
       // About Page
       companyStory: "قصتنا",
       mission: "مهمتنا",
@@ -180,7 +186,7 @@ const resources = {
       culture: "ثقافتنا",
       achievements: "إنجازاتنا",
       careers: "الوظائف",
-      
+
       // Services Page
       serviceCategories: "فئات الخدمات",
       serviceDetails: "تفاصيل الخدمة",
@@ -188,7 +194,7 @@ const resources = {
       pricing: "خطط الأسعار",
       caseStudies: "دراسات الحالة",
       faqs: "الأسئلة الشائعة",
-      
+
       // Blog Page
       blogList: "مقالات المدونة",
       categories: "الفئات",
@@ -197,16 +203,16 @@ const resources = {
       newsletter: "اشتراك النشرة الإخبارية",
       tags: "العلامات",
       authorHighlight: "تسليط الضوء على المؤلف",
-      
+
       // Contact Page
       contactForm: "نموذج الاتصال",
       location: "موقعنا",
       phoneEmail: "الهاتف والبريد الإلكتروني",
-      socialMedia: "وسائل التواصل الاجتماعي",  
+      socialMedia: "وسائل التواصل الاجتماعي",
       officeHours: "ساعات العمل",
       supportInfo: "معلومات الدعم",
-      feedback: "التعليقات"
-    }
+      feedback: "التعليقات",
+    },
   },
   so: {
     translation: {
@@ -216,30 +222,32 @@ const resources = {
       services: "Adeegyada",
       blog: "Blog",
       contact: "Xiriir",
-      
+
       // Common
       learnMore: "Wax Badan Baro",
       getStarted: "Bilow",
       contactUs: "Nala Xiriir",
       readMore: "Wax Badan Akhri",
-      
+
       // Home Page
       heroTitle: "Xalal Xirfad leh oo Guul Caalami ah",
-      heroSubtitle: "Waxaanu bixiynaa xalal hal-abuurnimo leh oo kordhinaya kobaca oo beddelaya ganacsiyada adduunka oo dhan",
+      heroSubtitle:
+        "Waxaanu bixiynaa xalal hal-abuurnimo leh oo kordhinaya kobaca oo beddelaya ganacsiyada adduunka oo dhan",
       aboutTitle: "Shirkadayada",
-      aboutDescription: "Khibrad toban sano ka badan, waxaanu siinaa adeegyo heer caalami ah macaamilada adduunka oo dhan",
+      aboutDescription:
+        "Khibrad toban sano ka badan, waxaanu siinaa adeegyo heer caalami ah macaamilada adduunka oo dhan",
       featuresTitle: "Sifooyinkayaga",
       servicesTitle: "Adeegyadayada",
       testimonialsTitle: "Waxa Macaamiladayadu Yiraahdaan",
       blogTitle: "Wararka iyo Aragtiyada Cusub",
-      
+
       // Footer
       company: "Shirkadda",
       quickLinks: "Xiriirro Degdeg ah",
       support: "Taageero",
       followUs: "Na Raac",
       allRightsReserved: "Dhammaan xuquuqdu way kaydsan yihiin",
-      
+
       // About Page
       companyStory: "Sheekadayada",
       mission: "Hadafkayaga",
@@ -248,7 +256,7 @@ const resources = {
       culture: "Dhaqankayaga",
       achievements: "Guuleyaashayada",
       careers: "Shaqooyin",
-      
+
       // Services Page
       serviceCategories: "Noocyada Adeegga",
       serviceDetails: "Faahfaahinta Adeegga",
@@ -256,7 +264,7 @@ const resources = {
       pricing: "Qorsheeyada Qiimaha",
       caseStudies: "Daraasadaha Kiiska",
       faqs: "Su'aalaha Inta Badan la Weydiiyo",
-      
+
       // Blog Page
       blogList: "Boostada Blog",
       categories: "Qeybaha",
@@ -265,7 +273,7 @@ const resources = {
       newsletter: "Isdiiwaangelinta Warqadda",
       tags: "Sumadaha",
       authorHighlight: "Dhalaalinta Qoraaga",
-      
+
       // Contact Page
       contactForm: "Foomka Xiriirka",
       location: "Goobteenna",
@@ -273,9 +281,9 @@ const resources = {
       socialMedia: "Media Bulshada",
       officeHours: "Saacadaha Xafiiska",
       supportInfo: "Macluumaadka Taageerida",
-      feedback: "Jawaab celinta"
-    }
-  }
+      feedback: "Jawaab celinta",
+    },
+  },
 };
 
 i18n
@@ -283,14 +291,14 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'en',
+    fallbackLng: "en",
     debug: false,
     interpolation: {
       escapeValue: false,
     },
     detection: {
-      order: ['localStorage', 'navigator', 'htmlTag'],
-      caches: ['localStorage'],
+      order: ["localStorage", "navigator", "htmlTag"],
+      caches: ["localStorage"],
     },
   });
 

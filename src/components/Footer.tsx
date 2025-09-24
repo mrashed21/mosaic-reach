@@ -1,7 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Twitter,
+} from "lucide-react";
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -17,10 +25,13 @@ export const Footer: React.FC = () => {
               <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">G</span>
               </div>
-              <span className="text-xl font-bold text-foreground">GlobalCorp</span>
+              <span className="text-xl font-bold text-foreground">
+                GlobalCorp
+              </span>
             </div>
             <p className="text-professional text-sm">
-              Professional solutions for global success. We deliver innovative services worldwide.
+              Professional solutions for global success. We deliver innovative
+              services worldwide.
             </p>
             <div className="flex space-x-4">
               <Facebook className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
@@ -32,41 +43,109 @@ export const Footer: React.FC = () => {
 
           {/* Company Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">{t('company')}</h3>
+            <h3 className="text-lg font-semibold text-foreground">
+              {t("company")}
+            </h3>
             <ul className="space-y-2">
-              <li><Link to="/about" className="text-professional hover:text-primary transition-colors">{t('about')}</Link></li>
-              <li><Link to="/services" className="text-professional hover:text-primary transition-colors">{t('services')}</Link></li>
-              <li><Link to="/blog" className="text-professional hover:text-primary transition-colors">{t('blog')}</Link></li>
-              <li><Link to="/contact" className="text-professional hover:text-primary transition-colors">{t('contact')}</Link></li>
+              <li>
+                <Link
+                  to="/about"
+                  className="text-professional hover:text-primary transition-colors"
+                >
+                  {t("about")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services"
+                  className="text-professional hover:text-primary transition-colors"
+                >
+                  {t("services")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/blog"
+                  className="text-professional hover:text-primary transition-colors"
+                >
+                  {t("blog")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="text-professional hover:text-primary transition-colors"
+                >
+                  {t("contact")}
+                </Link>
+              </li>
             </ul>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">{t('quickLinks')}</h3>
+            <h3 className="text-lg font-semibold text-foreground">
+              {t("quickLinks")}
+            </h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-professional hover:text-primary transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-professional hover:text-primary transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="text-professional hover:text-primary transition-colors">FAQ</a></li>
-              <li><a href="#" className="text-professional hover:text-primary transition-colors">{t('support')}</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-professional hover:text-primary transition-colors"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-professional hover:text-primary transition-colors"
+                >
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-professional hover:text-primary transition-colors"
+                >
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-professional hover:text-primary transition-colors"
+                >
+                  {t("support")}
+                </a>
+              </li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">{t('contact')}</h3>
+            <h3 className="text-lg font-semibold text-foreground">
+              {t("contact")}
+            </h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="text-professional text-sm">info@globalcorp.com</span>
+                <span className="text-professional text-sm">
+                  info@globalcorp.com
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-primary" />
-                <span className="text-professional text-sm">+1 (555) 123-4567</span>
+                <span className="text-professional text-sm">
+                  +1 (555) 123-4567
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-primary" />
-                <span className="text-professional text-sm">123 Business Ave, NY 10001</span>
+                <span className="text-professional text-sm">
+                  123 Business Ave, NY 10001
+                </span>
               </div>
             </div>
           </div>
@@ -76,7 +155,7 @@ export const Footer: React.FC = () => {
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-professional text-sm">
-              © {currentYear} GlobalCorp. {t('allRightsReserved')}.
+              © {currentYear} GlobalCorp. {t("allRightsReserved")}.
             </p>
             <p className="text-professional text-sm mt-2 md:mt-0">
               Made with ❤️ for global businesses

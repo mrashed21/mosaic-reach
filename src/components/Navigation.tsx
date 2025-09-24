@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import { Button } from '@/components/ui/button';
-import { LanguageSwitcher } from './LanguageSwitcher';
-import { ThemeToggle } from './ThemeToggle';
-import { Menu, X } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Link, useLocation } from "react-router-dom";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
-  { key: 'home', path: '/' },
-  { key: 'about', path: '/about' },
-  { key: 'services', path: '/services' },
-  { key: 'blog', path: '/blog' },
-  { key: 'contact', path: '/contact' },
+  { key: "home", path: "/" },
+  { key: "about", path: "/about" },
+  { key: "services", path: "/services" },
+  { key: "blog", path: "/blog" },
+  { key: "contact", path: "/contact" },
 ];
 
 export const Navigation: React.FC = () => {
@@ -28,7 +28,9 @@ export const Navigation: React.FC = () => {
             <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">G</span>
             </div>
-            <span className="text-xl font-bold text-foreground">GlobalCorp</span>
+            <span className="text-xl font-bold text-foreground">
+              GlobalCorp
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -37,7 +39,9 @@ export const Navigation: React.FC = () => {
               <Link
                 key={item.key}
                 to={item.path}
-                className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
+                className={`nav-link ${
+                  location.pathname === item.path ? "active" : ""
+                }`}
               >
                 {t(item.key)}
               </Link>
@@ -48,7 +52,7 @@ export const Navigation: React.FC = () => {
           <div className="flex items-center space-x-4">
             <LanguageSwitcher />
             <ThemeToggle />
-            
+
             {/* Mobile menu button */}
             <Button
               variant="ghost"
@@ -56,7 +60,11 @@ export const Navigation: React.FC = () => {
               className="md:hidden"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
-              {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              {isMobileMenuOpen ? (
+                <X className="h-5 w-5" />
+              ) : (
+                <Menu className="h-5 w-5" />
+              )}
             </Button>
           </div>
         </div>
@@ -69,7 +77,9 @@ export const Navigation: React.FC = () => {
                 <Link
                   key={item.key}
                   to={item.path}
-                  className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
+                  className={`nav-link ${
+                    location.pathname === item.path ? "active" : ""
+                  }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {t(item.key)}

@@ -1,17 +1,23 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { 
-  Users, 
-  Target, 
-  Eye, 
-  Award, 
-  Heart, 
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  Award,
   Briefcase,
+  Eye,
   Globe,
-  TrendingUp
-} from 'lucide-react';
+  Heart,
+  Target,
+  TrendingUp,
+  Users,
+} from "lucide-react";
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 export const About: React.FC = () => {
   const { t } = useTranslation();
@@ -19,10 +25,18 @@ export const About: React.FC = () => {
   const teamMembers = [
     { name: "John Anderson", role: "CEO & Founder", experience: "15+ years" },
     { name: "Sarah Chen", role: "CTO", experience: "12+ years" },
-    { name: "Michael Rodriguez", role: "VP Operations", experience: "10+ years" },
+    {
+      name: "Michael Rodriguez",
+      role: "VP Operations",
+      experience: "10+ years",
+    },
     { name: "Emily Johnson", role: "Head of Design", experience: "8+ years" },
     { name: "David Kim", role: "Lead Developer", experience: "9+ years" },
-    { name: "Lisa Thompson", role: "Marketing Director", experience: "11+ years" },
+    {
+      name: "Lisa Thompson",
+      role: "Marketing Director",
+      experience: "11+ years",
+    },
   ];
 
   const achievements = [
@@ -39,15 +53,17 @@ export const About: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="heading-xl text-foreground mb-6">
-              {t('companyStory')}
+              {t("companyStory")}
             </h1>
             <p className="text-xl text-professional mb-8">
-              Founded in 2009, GlobalCorp began as a small consulting firm with a big vision: 
-              to help businesses worldwide achieve their full potential through innovative technology solutions.
+              Founded in 2009, GlobalCorp began as a small consulting firm with
+              a big vision: to help businesses worldwide achieve their full
+              potential through innovative technology solutions.
             </p>
             <p className="text-lg text-professional">
-              Today, we're proud to be a leading global provider of digital transformation services, 
-              trusted by Fortune 500 companies and growing startups alike.
+              Today, we're proud to be a leading global provider of digital
+              transformation services, trusted by Fortune 500 companies and
+              growing startups alike.
             </p>
           </div>
         </div>
@@ -60,30 +76,39 @@ export const About: React.FC = () => {
             <div>
               <Target className="h-12 w-12 text-primary mb-6" />
               <h2 className="heading-lg text-foreground mb-6">
-                {t('mission')}
+                {t("mission")}
               </h2>
               <p className="text-professional text-lg leading-relaxed">
-                Our mission is to empower businesses of all sizes to thrive in the digital age. 
-                We believe that every organization deserves access to world-class technology solutions 
-                that drive growth, efficiency, and innovation. Through our expertise and dedication, 
-                we help our clients navigate complex challenges and seize new opportunities in an 
-                ever-evolving marketplace.
+                Our mission is to empower businesses of all sizes to thrive in
+                the digital age. We believe that every organization deserves
+                access to world-class technology solutions that drive growth,
+                efficiency, and innovation. Through our expertise and
+                dedication, we help our clients navigate complex challenges and
+                seize new opportunities in an ever-evolving marketplace.
               </p>
             </div>
             <div className="professional-card p-8 bg-gradient-secondary">
-              <h3 className="text-2xl font-semibold text-foreground mb-4">Our Core Values</h3>
+              <h3 className="text-2xl font-semibold text-foreground mb-4">
+                Our Core Values
+              </h3>
               <ul className="space-y-3">
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-foreground">Excellence in every project</span>
+                  <span className="text-foreground">
+                    Excellence in every project
+                  </span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-foreground">Integrity and transparency</span>
+                  <span className="text-foreground">
+                    Integrity and transparency
+                  </span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-foreground">Innovation and creativity</span>
+                  <span className="text-foreground">
+                    Innovation and creativity
+                  </span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
@@ -103,23 +128,24 @@ export const About: React.FC = () => {
               <div className="professional-card p-8 bg-gradient-primary text-white">
                 <h3 className="text-2xl font-semibold mb-4">Vision 2030</h3>
                 <p className="text-white/90 leading-relaxed">
-                  By 2030, we envision GlobalCorp as the world's most trusted partner for 
-                  digital transformation, helping 10,000+ businesses across 100+ countries 
-                  achieve sustainable growth through innovative technology solutions.
+                  By 2030, we envision GlobalCorp as the world's most trusted
+                  partner for digital transformation, helping 10,000+ businesses
+                  across 100+ countries achieve sustainable growth through
+                  innovative technology solutions.
                 </p>
               </div>
             </div>
             <div className="order-1 lg:order-2">
               <Eye className="h-12 w-12 text-primary mb-6" />
-              <h2 className="heading-lg text-foreground mb-6">
-                {t('vision')}
-              </h2>
+              <h2 className="heading-lg text-foreground mb-6">{t("vision")}</h2>
               <p className="text-professional text-lg leading-relaxed">
-                We envision a world where technology barriers don't limit business potential. 
-                Our vision is to be the global leader in making advanced technology accessible, 
-                affordable, and actionable for organizations worldwide. We strive to create a 
-                future where every business, regardless of size or location, can leverage 
-                cutting-edge solutions to compete and succeed in the global marketplace.
+                We envision a world where technology barriers don't limit
+                business potential. Our vision is to be the global leader in
+                making advanced technology accessible, affordable, and
+                actionable for organizations worldwide. We strive to create a
+                future where every business, regardless of size or location, can
+                leverage cutting-edge solutions to compete and succeed in the
+                global marketplace.
               </p>
             </div>
           </div>
@@ -130,11 +156,10 @@ export const About: React.FC = () => {
       <section className="section-padding">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="heading-lg text-foreground mb-4">
-              {t('team')}
-            </h2>
+            <h2 className="heading-lg text-foreground mb-4">{t("team")}</h2>
             <p className="text-xl text-professional max-w-2xl mx-auto">
-              Meet the exceptional professionals who drive our success and deliver outstanding results for our clients.
+              Meet the exceptional professionals who drive our success and
+              deliver outstanding results for our clients.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -164,38 +189,47 @@ export const About: React.FC = () => {
       <section className="section-padding bg-gradient-secondary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="heading-lg text-foreground mb-4">
-              {t('culture')}
-            </h2>
+            <h2 className="heading-lg text-foreground mb-4">{t("culture")}</h2>
             <p className="text-xl text-professional max-w-2xl mx-auto">
-              Our culture is built on collaboration, innovation, and a shared commitment to excellence.
+              Our culture is built on collaboration, innovation, and a shared
+              commitment to excellence.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <Heart className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-foreground mb-2">Passion</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-2">
+                Passion
+              </h3>
               <p className="text-professional">
-                We're passionate about technology and its power to transform businesses.
+                We're passionate about technology and its power to transform
+                businesses.
               </p>
             </div>
             <div className="text-center">
               <Users className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-foreground mb-2">Collaboration</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-2">
+                Collaboration
+              </h3>
               <p className="text-professional">
                 We believe in the power of teamwork and collective intelligence.
               </p>
             </div>
             <div className="text-center">
               <Target className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-foreground mb-2">Excellence</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-2">
+                Excellence
+              </h3>
               <p className="text-professional">
-                We strive for excellence in everything we do, from code to client service.
+                We strive for excellence in everything we do, from code to
+                client service.
               </p>
             </div>
             <div className="text-center">
               <Globe className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-foreground mb-2">Global Mindset</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-2">
+                Global Mindset
+              </h3>
               <p className="text-professional">
                 We embrace diversity and think globally while acting locally.
               </p>
@@ -209,10 +243,11 @@ export const About: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="heading-lg text-foreground mb-4">
-              {t('achievements')}
+              {t("achievements")}
             </h2>
             <p className="text-xl text-professional max-w-2xl mx-auto">
-              Our track record speaks for itself. Here are some key milestones in our journey.
+              Our track record speaks for itself. Here are some key milestones
+              in our journey.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -231,14 +266,23 @@ export const About: React.FC = () => {
           </div>
           <div className="mt-12 professional-card p-8 bg-gradient-primary text-white text-center">
             <Award className="h-12 w-12 text-white mx-auto mb-4" />
-            <h3 className="text-2xl font-semibold mb-4">Industry Recognition</h3>
+            <h3 className="text-2xl font-semibold mb-4">
+              Industry Recognition
+            </h3>
             <p className="text-white/90 mb-6">
-              Winner of "Best Digital Transformation Partner 2023" and "Global Innovation Award 2022"
+              Winner of "Best Digital Transformation Partner 2023" and "Global
+              Innovation Award 2022"
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <span className="bg-white/20 px-4 py-2 rounded">ISO 27001 Certified</span>
-              <span className="bg-white/20 px-4 py-2 rounded">SOC 2 Compliant</span>
-              <span className="bg-white/20 px-4 py-2 rounded">GDPR Compliant</span>
+              <span className="bg-white/20 px-4 py-2 rounded">
+                ISO 27001 Certified
+              </span>
+              <span className="bg-white/20 px-4 py-2 rounded">
+                SOC 2 Compliant
+              </span>
+              <span className="bg-white/20 px-4 py-2 rounded">
+                GDPR Compliant
+              </span>
             </div>
           </div>
         </div>
@@ -248,11 +292,10 @@ export const About: React.FC = () => {
       <section className="section-padding bg-secondary/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="heading-lg text-foreground mb-4">
-              {t('careers')}
-            </h2>
+            <h2 className="heading-lg text-foreground mb-4">{t("careers")}</h2>
             <p className="text-xl text-professional max-w-2xl mx-auto">
-              Join our team of innovators and help shape the future of business technology.
+              Join our team of innovators and help shape the future of business
+              technology.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -292,9 +335,7 @@ export const About: React.FC = () => {
                 <p className="text-professional mb-4">
                   Send your resume and cover letter to careers@globalcorp.com
                 </p>
-                <Button className="w-full">
-                  View All Positions
-                </Button>
+                <Button className="w-full">View All Positions</Button>
               </CardContent>
             </Card>
           </div>
@@ -309,10 +350,11 @@ export const About: React.FC = () => {
               Ready to Work Together?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Let's discuss how our expertise can help your business achieve its goals.
+              Let's discuss how our expertise can help your business achieve its
+              goals.
             </p>
             <Button size="lg" variant="secondary">
-              {t('contactUs')}
+              {t("contactUs")}
             </Button>
           </div>
         </div>
